@@ -13,7 +13,7 @@ function DataTable({
   caption: string
 }) {
   return (
-    <div className="overflow-x-auto">
+    <div className="min-w-0 max-w-full overflow-x-auto">
       <table className="w-full min-w-[34rem] border-collapse text-left">
         <caption className="sr-only">{caption}</caption>
         {head && (
@@ -105,7 +105,7 @@ export default function TradicaoNoMundo() {
 
       <Section tone="cream">
         <h2 className="text-4xl">{mundo.fssp.title}</h2>
-        <div className="mt-6 grid gap-10 lg:grid-cols-[1.6fr_1fr]">
+        <div className="mt-6 grid grid-cols-1 gap-10 lg:grid-cols-[minmax(0,1.6fr)_minmax(0,1fr)]">
           <Prose>
             {mundo.fssp.paragraphs.map((p) => (
               <p key={p.slice(0, 24)}>{p}</p>
