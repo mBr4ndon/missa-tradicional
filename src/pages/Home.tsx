@@ -13,14 +13,14 @@ export default function Home() {
   usePageTitle('Principal')
   return (
     <>
-      <section className="hero relative isolate flex min-h-[92svh] items-center justify-center overflow-hidden bg-navy text-white">
+      <section className="hero relative isolate flex min-h-[84svh] md:min-h-[92svh] items-center justify-center overflow-hidden bg-navy text-white">
         <img
           src={img('heroMonstrancia', 1800)}
           alt=""
           className="absolute inset-0 -z-10 h-full w-full object-cover"
           fetchPriority="high"
         />
-        <div className="absolute inset-0 -z-10 bg-gradient-to-b from-navy/70 via-navy/35 to-navy/75" />
+        <div className="absolute inset-0 -z-10 bg-gradient-to-b from-navy/70 via-navy/30 to-navy/40" />
         <div className="mx-auto max-w-4xl px-6 pb-28 pt-40 text-center">
           <h1 className="hero-in text-5xl leading-[1.05] sm:text-7xl">{home.title}</h1>
           <p className="hero-in hero-in-2 mx-auto mt-6 max-w-[48ch] text-lg text-white/90 sm:text-xl">
