@@ -57,9 +57,9 @@ function DataTable({
 
 function PhotoRow({ photos }: { photos: { image: import('../images').ImageKey; caption: string }[] }) {
   return (
-    <div className="mt-10 grid gap-6 sm:grid-cols-3">
+    <div className="mt-10 grid items-start gap-6 sm:grid-cols-3">
       {photos.map((p) => (
-        <Figure key={p.image} image={p.image} caption={p.caption} width={800} className="[&_img]:aspect-[4/3]" />
+        <Figure key={p.image} image={p.image} caption={p.caption} width={800} />
       ))}
     </div>
   )
@@ -93,9 +93,9 @@ export default function TradicaoNoMundo() {
           <p>{mundo.institutes}</p>
         </Prose>
         <h2 className="mt-14 text-3xl">{mundo.mapsTitle}</h2>
-        <div className="mt-6 grid gap-6 sm:grid-cols-3">
+        <div className="mt-6 grid items-start gap-6 sm:grid-cols-3">
           {mundo.maps.map((m) => (
-            <Figure key={m.image} image={m.image} caption={m.caption} width={800} className="[&_img]:aspect-square" />
+            <Figure key={m.image} image={m.image} caption={m.caption} width={800} />
           ))}
         </div>
         <div className="mt-3">

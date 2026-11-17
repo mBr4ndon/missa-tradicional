@@ -76,7 +76,7 @@ export function Figure({
         src={img(image, width)}
         alt={alt ?? caption ?? ''}
         loading="lazy"
-        className="h-full max-h-[34rem] w-full object-cover"
+        className="h-auto w-full"
       />
       {caption && <figcaption className="mt-2 text-sm italic text-navy/70">{caption}</figcaption>}
     </figure>

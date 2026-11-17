@@ -252,13 +252,6 @@ export const galeria = {
   ] as const,
 }
 
-export const colours = [
-  { id: 'branco', label: 'Branco', value: '#8C6D17' },
-  { id: 'vermelho', label: 'Vermelho', value: '#8E1B24' },
-  { id: 'verde', label: 'Verde', value: '#2F5D43' },
-  { id: 'roxo', label: 'Roxo', value: '#4B2E6B' },
-  { id: 'rosa', label: 'Rosa', value: '#9C4A66' },
-]
 
 // Locais onde se celebra a Missa tradicional em Portugal.
 // Só entram aqui dados confirmados com quem celebra. Cada entrada tem de ter a data de confirmação.

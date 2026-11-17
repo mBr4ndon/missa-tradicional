@@ -34,8 +34,8 @@ export default function Home() {
       </section>
 
       <section className="relative bg-cream pb-28 pt-12 md:pt-16">
-        <div className="mx-auto grid max-w-6xl gap-10 px-6 md:grid-cols-[1.1fr_1fr_1fr_1fr] md:gap-0">
-          <div className="md:pr-8">
+        <div className="mx-auto grid max-w-6xl gap-10 px-6 lg:grid-cols-[1.1fr_1fr_1fr_1fr] lg:gap-0">
+          <div className="lg:pr-8">
             <h2 className="text-3xl leading-tight sm:text-4xl">{home.pillarsTitle}</h2>
             <Link
               to={routes.porque}
@@ -45,7 +45,7 @@ export default function Home() {
             </Link>
           </div>
           {home.pillars.map((p) => (
-            <div key={p.title} className="border-t border-gold/60 pt-6 md:border-l md:border-t-0 md:px-8 md:pt-0">
+            <div key={p.title} className="border-t border-gold/60 pt-6 lg:border-l lg:border-t-0 lg:px-8 lg:pt-0">
               <h3 className="accent-t text-xl font-bold text-accent">{p.title}</h3>
               <p className="mt-2 text-[0.95rem] leading-relaxed text-navy/85">{p.body}</p>
             </div>
