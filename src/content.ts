@@ -1,3 +1,5 @@
+import type { ImageKey } from './images'
+
 // Todo o texto do site vive aqui. Textos copiados do site original (Wix), sem alterações,
 // exceto o ponto e vírgula final dos dois primeiros pontos de "Porquê a Missa Tradicional?".
 
@@ -124,12 +126,15 @@ export const papas = {
     'Dentre estes grupos, pode citar-se a Fraternidade de São Pedro (FSSP), o Instituto de Cristo Rei e Sumo Sacerdote (ICRSS) e o Instituto do Bom Pastor (IBP). Também houve muitos bispos, em particular na Europa, que concederam esta faculdade a sacerdotes diocesanos.',
     'Em 2007, com a publicação da carta apostólica Summorum Pontificum, o Papa Bento XVI alargou ainda mais a possibilidade de celebração da Missa tridentina ao permitir que os párocos acedessem aos pedidos dos fiéis que a desejassem, e reconhecendo a plena liberdade de a celebrar.',
     'Na carta apostólica Traditionis Custodes, de 2021, o Papa Francisco regula o uso do Missal Romano de 1962, introduzindo algumas restrições. Contudo, não só esta faculdade continua a existir como o documento em causa não se aplica  aos institutos reigiosos e sociedades de vida apostólica de direito pontifício, como esclareceu o Santo Padre em 2022.',
+    'O Papa Francisco morreu a 21 de abril de 2025 e, a 8 de maio, foi eleito o Papa Leão XIV. Em outubro de 2025, o Cardeal Raymond Burke celebrou a Missa tradicional no altar da Cátedra, na Basílica de São Pedro, com autorização do Papa. Em novembro de 2026, no voo de regresso da América do Sul, Leão XIV afirmou que, por agora, não vai alterar a Traditionis Custodes, que descreveu como decisão do Papa Francisco.',
   ],
   popes: [
-    { image: 'joaoPauloII' as const, alt: 'Papa João Paulo II', name: 'João Paulo II', dates: '1920 - 2005' },
-    { image: 'bentoXVI' as const, alt: 'Papa Bento XVI', name: 'Bento XVI', dates: '1927 - 2022' },
-    { image: 'francisco' as const, alt: 'Papa Francisco', name: 'Francisco', dates: '1936 - ' },
-  ],
+    { image: 'joaoPauloII', alt: 'Papa João Paulo II', name: 'João Paulo II', dates: '1920 - 2005' },
+    { image: 'bentoXVI', alt: 'Papa Bento XVI', name: 'Bento XVI', dates: '1927 - 2022' },
+    { image: 'francisco', alt: 'Papa Francisco', name: 'Francisco', dates: '1936 - 2025' },
+    // Falta a fotografia oficial de Leão XIV: juntar a chave em images.json e indicá-la aqui.
+    { name: 'Leão XIV', dates: '1955 - ' },
+  ] as { image?: ImageKey; alt?: string; name: string; dates: string }[],
 }
 
 export const porque = {
