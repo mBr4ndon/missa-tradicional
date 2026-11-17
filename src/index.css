@@ -8,24 +8,26 @@
 @theme {
   --font-display: 'Cardo', 'Times New Roman', serif;
   --font-body: 'Instrument Sans', system-ui, sans-serif;
-  --color-stone: #e7e8e6;
-  --color-ink: #1d1b24;
+  --color-cream: #efeae0;
+  --color-ivory: #f7f4ed;
+  --color-navy: #1b2540;
+  --color-gold: #a8924f;
   --color-accent: var(--accent);
 }
 
 :root {
-  --accent: #9a7b2f;
+  --accent: #8c6d17;
 }
 
 html {
   scroll-behavior: smooth;
-  background: var(--color-stone);
-  color: var(--color-ink);
+  background: var(--color-ivory);
+  color: var(--color-navy);
 }
 
 body {
   font-family: var(--font-body);
-  line-height: 1.65;
+  line-height: 1.7;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -38,18 +40,23 @@ h1, h2, h3, blockquote {
   outline-offset: 3px;
 }
 
-/* Um único momento de movimento: a abertura do hero. */
+.on-dark :focus-visible,
+.hero :focus-visible {
+  outline-color: #fff;
+}
+
+/* Único momento de movimento: a abertura do hero. */
 @keyframes rise {
   from { opacity: 0; transform: translateY(14px); }
   to { opacity: 1; transform: none; }
 }
-.hero-in { animation: rise 1.1s cubic-bezier(0.2, 0.7, 0.2, 1) both; }
-.hero-in-2 { animation-delay: 0.5s; }
-.hero-in-3 { animation-delay: 0.9s; }
+.hero-in { animation: rise 1s cubic-bezier(0.2, 0.7, 0.2, 1) both; }
+.hero-in-2 { animation-delay: 0.35s; }
+.hero-in-3 { animation-delay: 0.7s; }
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   .hero-in { animation: none; }
 }
 
-.accent-bar { transition: background-color 0.5s ease; }
+.accent-t { transition: background-color 0.4s ease, color 0.4s ease, border-color 0.4s ease; }

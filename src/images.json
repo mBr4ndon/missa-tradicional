@@ -1,0 +1,42 @@
+{
+  "brasao": { "id": "621d6a_ae09b08b3031417eaf8039b51c082755~mv2.png", "ext": "png" },
+  "heroMonstrancia": { "id": "621d6a_1040abbef8744999b5deb73452dad974~mv2.jpeg", "ext": "jpg" },
+  "heroPorque": { "id": "621d6a_2fcae67a33a44a3eaa1561d0231ba98b~mv2.jpg", "ext": "jpg" },
+  "heroPapas": { "id": "621d6a_06ae0b7c7bd64a409cba65136fc23d09~mv2.jpg", "ext": "jpg" },
+  "heroMundo": { "id": "621d6a_0d3e0c3a61de46f893d44275d84e1275~mv2.jpg", "ext": "jpg" },
+
+  "ultimaCeia": { "id": "621d6a_f374c61c69794c6fb528d9976ed46d8d~mv2.jpg", "ext": "jpg" },
+  "saoPedro": { "id": "621d6a_bc42e83bd02e462fab0166eea78d47ae~mv2.jpg", "ext": "jpg" },
+  "gregorioMagno": { "id": "621d6a_e21bfb4aa1214311b414aba1a8a4a231~mv2.jpg", "ext": "jpg" },
+  "pioV": { "id": "621d6a_cc4410c4d343420bb9ae74ec2c4f20dd~mv2.png", "ext": "jpg" },
+
+  "joaoPauloII": { "id": "621d6a_ad579e2902a24e428e6d1e91d24168a1~mv2.jpg", "ext": "jpg" },
+  "bentoXVI": { "id": "621d6a_e9a5497e8d54476cb23cb69ba6ca5327~mv2.png", "ext": "jpg" },
+  "francisco": { "id": "621d6a_51ba3ddd3d7f47a3ac1246cc87bd04d4~mv2.jpg", "ext": "jpg" },
+
+  "mapaDiocesanas": { "id": "621d6a_71d71c0c81814e0da1f512d08de63f6e~mv2.png", "ext": "jpg" },
+  "mapaFSSP": { "id": "621d6a_d2d5a8f8bbad449f81bacf6691429ecc~mv2.png", "ext": "jpg" },
+  "mapaICRSS": { "id": "621d6a_6775f470ee1e418c841f3602f1fe038d~mv2.png", "ext": "jpg" },
+  "ratzingerFSSP": { "id": "621d6a_60c16d63270847399b273fb0bd447c66~mv2.webp", "ext": "jpg" },
+  "audienciaFSSP": { "id": "621d6a_2fbed1aa08284331bbb9dfcca58f1572~mv2.jpg", "ext": "jpg" },
+  "wigratzbad": { "id": "621d6a_78b02dc5296145c49eb241d17064f33a~mv2.jpg", "ext": "jpg" },
+  "burkeGricigliano": { "id": "621d6a_7a065930cff0428bb4417f335ef1997a~mv2.jpg", "ext": "jpg" },
+  "audienciaICRSS": { "id": "621d6a_6c2f71a989524fccb121793bfbaf6b90~mv2.png", "ext": "jpg" },
+  "oficioDivino": { "id": "621d6a_465fe1dd1d6446a8a30c92f83a54661f~mv2.jpg", "ext": "jpg" },
+  "superiorIBP": { "id": "621d6a_5ca882c050b24e338284d72072326813~mv2.jpg", "ext": "jpg" },
+  "seminarioSaoVicente": { "id": "621d6a_ad602d119e1b4c648d4921c6e1408dde~mv2.jpg", "ext": "jpg" },
+  "saoNicolau": { "id": "621d6a_35d08d8cb73d4b57bfeb352ef45283df~mv2.jpg", "ext": "jpg" },
+
+  "galeria01": { "id": "621d6a_f3136c12008147ae9d6ac02502bc7056~mv2.png", "ext": "jpg" },
+  "galeria02": { "id": "621d6a_2a88b5e6795d4475b056ebb899c539f9~mv2.jpg", "ext": "jpg" },
+  "galeria03": { "id": "621d6a_92e50059bc7b4f7b98f6babd5f555c90~mv2.webp", "ext": "jpg" },
+  "galeria04": { "id": "621d6a_698a9914c3654b8f94d6f7dd9f5f786e~mv2.jpg", "ext": "jpg" },
+  "galeria05": { "id": "621d6a_db262140ec074564b616b24d6e910bc7~mv2.webp", "ext": "jpg" },
+  "galeria06": { "id": "621d6a_838e4a94b7a24882a37f0cf483a3ffa2~mv2.png", "ext": "jpg" },
+  "galeria07": { "id": "621d6a_7d65f76c34eb43079aac32c69627cda8~mv2.jpg", "ext": "jpg" },
+  "galeria08": { "id": "621d6a_6a4dcc61795e488782273b46900613bf~mv2.jpg", "ext": "jpg" },
+  "galeria09": { "id": "621d6a_40068fc27f2d40168c3aaf716c34728a~mv2.jpg", "ext": "jpg" },
+  "galeria10": { "id": "621d6a_60c16d63270847399b273fb0bd447c66~mv2.webp", "ext": "jpg" },
+  "galeria11": { "id": "621d6a_bc18db4f40b64ec8ab7a95e70cb6ef93~mv2.jpg", "ext": "jpg" },
+  "galeria12": { "id": "621d6a_06ae0b7c7bd64a409cba65136fc23d09~mv2.jpg", "ext": "jpg" }
+}
