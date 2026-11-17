@@ -16,6 +16,8 @@ export const routes = {
   porque: '/porque-a-missa-tradicional',
   mundo: '/a-tradicao-no-mundo',
   galeria: '/galeria',
+  onde: '/onde-assistir',
+  docs: '/documentacao',
 }
 
 type NavLeaf = { label: string; to: string; children?: undefined }
@@ -31,6 +33,8 @@ export const nav: (NavLeaf | NavGroup)[] = [
     ],
   },
   { label: 'Porquê a Missa Tradicional?', to: routes.porque },
+  { label: 'Onde assistir?', to: routes.onde },
+  { label: 'Documentação', to: routes.docs },
   { label: 'A Tradição no Mundo', to: routes.mundo },
   { label: 'Galeria', to: routes.galeria },
 ]
@@ -250,3 +254,144 @@ export const colours = [
   { id: 'roxo', label: 'Roxo', value: '#4B2E6B' },
   { id: 'rosa', label: 'Rosa', value: '#9C4A66' },
 ]
+
+// Locais onde se celebra a Missa tradicional em Portugal.
+// Só entram aqui dados confirmados com quem celebra. Cada entrada tem de ter a data de confirmação.
+export type Local = {
+  cidade: string
+  igreja: string
+  morada?: string
+  horarios: { dia: string; hora: string }[]
+  contacto?: string
+  confirmadoEm: string
+}
+
+export const onde = {
+  title: 'Onde assistir?',
+  intro:
+    'Lista das Missas tradicionais celebradas em Portugal, com horários e contactos confirmados.',
+  locais: [] as Local[],
+  empty: {
+    title: 'Lista em preparação',
+    body: 'Ainda estamos a confirmar os locais e horários com quem celebra. Para não indicar um horário errado, só publicamos o que está confirmado. Se conhece uma Missa tradicional em Portugal, escreva-nos.',
+    cta: 'Enviar informação',
+  },
+  directory: {
+    text: 'Entretanto, o diretório internacional que usamos como fonte:',
+    label: 'www.latinmassdir.org',
+    href: 'http://www.latinmassdir.org/',
+  },
+}
+
+export type Documento = {
+  titulo: string
+  data: string
+  autor: string
+  resumo: string
+  links: { label: string; href?: string }[]
+}
+
+export const docs = {
+  title: 'Documentação',
+  intro:
+    'Os documentos da Igreja citados neste site, por ordem cronológica, com ligação ao texto oficial no vatican.va.',
+  items: [
+    {
+      titulo: 'Sacrosanctum Concilium',
+      data: '4 de dezembro de 1963',
+      autor: 'Concílio Vaticano II',
+      resumo: 'Constituição sobre a Sagrada Liturgia.',
+      links: [
+        {
+          label: 'Texto em português',
+          href: 'https://www.vatican.va/archive/hist_councils/ii_vatican_council/documents/vat-ii_const_19631204_sacrosanctum-concilium_po.html',
+        },
+      ],
+    },
+    {
+      titulo: 'Quattuor abhinc annos',
+      data: '3 de outubro de 1984',
+      autor: 'Congregação para o Culto Divino',
+      resumo:
+        'Carta aos presidentes das conferências episcopais, com o indulto que permitiu o uso do Missal Romano de 1962.',
+      links: [{ label: 'Acta Apostolicae Sedis 76 (1984), 1088-1089' }],
+    },
+    {
+      titulo: 'Ecclesia Dei',
+      data: '2 de julho de 1988',
+      autor: 'São João Paulo II',
+      resumo: 'Carta apostólica sob forma de motu proprio.',
+      links: [
+        {
+          label: 'Texto em português',
+          href: 'https://www.vatican.va/content/john-paul-ii/pt/motu_proprio/documents/hf_jp-ii_motu-proprio_02071988_ecclesia-dei.html',
+        },
+      ],
+    },
+    {
+      titulo: 'Summorum Pontificum',
+      data: '7 de julho de 2007',
+      autor: 'Bento XVI',
+      resumo: 'Motu proprio sobre a «Liturgia romana anterior à reforma de 1970».',
+      links: [
+        {
+          label: 'Texto em português',
+          href: 'https://www.vatican.va/content/benedict-xvi/pt/motu_proprio/documents/hf_ben-xvi_motu-proprio_20070707_summorum-pontificum.html',
+        },
+      ],
+    },
+    {
+      titulo: 'Carta aos Bispos que acompanha o Summorum Pontificum',
+      data: '7 de julho de 2007',
+      autor: 'Bento XVI',
+      resumo: 'Carta que acompanha o motu proprio Summorum Pontificum.',
+      links: [
+        {
+          label: 'Texto em português',
+          href: 'https://www.vatican.va/content/benedict-xvi/pt/letters/2007/documents/hf_ben-xvi_let_20070707_lettera-vescovi.html',
+        },
+      ],
+    },
+    {
+      titulo: 'Universae Ecclesiae',
+      data: '30 de abril de 2011',
+      autor: 'Pontifícia Comissão Ecclesia Dei',
+      resumo: 'Instrução sobre a aplicação da carta apostólica Summorum Pontificum.',
+      links: [
+        {
+          label: 'Texto em português',
+          href: 'https://www.vatican.va/roman_curia/pontifical_commissions/ecclsdei/documents/rc_com_ecclsdei_doc_20110430_istr-universae-ecclesiae_po.html',
+        },
+      ],
+    },
+    {
+      titulo: 'Traditionis Custodes',
+      data: '16 de julho de 2021',
+      autor: 'Papa Francisco',
+      resumo:
+        'Carta apostólica sob forma de motu proprio sobre o uso da Liturgia Romana anterior à Reforma de 1970.',
+      links: [
+        {
+          label: 'Texto em inglês (PDF)',
+          href: 'https://www.vatican.va/content/francesco/en/motu_proprio/documents/20210716-motu-proprio-traditionis-custodes.pdf',
+        },
+        {
+          label: 'Carta aos bispos, em inglês',
+          href: 'https://www.vatican.va/content/francesco/en/letters/2021/documents/20210716-lettera-vescovi-liturgia.html',
+        },
+      ],
+    },
+    {
+      titulo: 'Rescriptum ex audientia Sanctissimi',
+      data: '20 de fevereiro de 2023',
+      autor: 'Dicastério para o Culto Divino e a Disciplina dos Sacramentos',
+      resumo: 'Sobre a implementação do motu proprio Traditionis custodes.',
+      links: [
+        {
+          label: 'Texto em português',
+          href: 'https://www.vatican.va/roman_curia/congregations/ccdds/documents/rc_con_ccdds_doc_20230220_rescriptum-traditioniscustodes_po.html',
+        },
+      ],
+    },
+  ] as Documento[],
+}

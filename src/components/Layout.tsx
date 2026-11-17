@@ -76,7 +76,7 @@ function Header() {
           aria-label="Principal"
           className={`${
             open ? 'absolute inset-x-0 top-full flex bg-navy/95 px-6 pb-6' : 'hidden'
-          } flex-col gap-1 md:static md:flex md:flex-row md:items-center md:gap-8 md:bg-transparent md:p-0`}
+          } flex-col gap-1 md:static md:flex md:flex-row md:items-center md:gap-6 md:bg-transparent md:p-0`}
         >
           {nav.map((item) =>
             item.children ? (
